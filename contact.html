@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Colonial Property Management</title>
+<meta name="description" content="Get in touch with Colonial Property Management. Call (845) 367-4240 or send us a message — and sign up for text updates.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><a href="tel:8453674240">+1 (845) 367-4240</a> &nbsp;|&nbsp; <a href="mailto:office@colonialpropertymanagement.com">office@colonialpropertymanagement.com</a></span>
+    <span>410A NY-59, Airmont, NY 10952</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <div class="name">Colonial Property Management</div>
+      <div class="tag">Owner-Preferred Since 1999</div>
+    </a>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms-of-service.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Do You Have Questions?</p>
+    <h2>Get In Touch With Us</h2>
+    <p class="lede">Property management services designed for real estate portfolios in the NY Tri-State Area. For immediate assistance, call us at (845) 367-4240.</p>
+
+    <div class="contact-grid">
+      <form class="optin" action="https://formsubmit.co/office@colonialpropertymanagement.com" method="POST" id="contactForm">
+        <input type="hidden" name="_subject" value="New website inquiry — colonialpropertymanagement.site">
+        <input type="hidden" name="_captcha" value="true">
+
+        <label class="field" for="name">Full Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label class="field" for="email">Email Address</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label class="field" for="phone">Mobile Phone Number <span class="optional">(optional &mdash; only needed if you'd like text updates)</span></label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(___) ___-____">
+
+        <label class="field" for="ptype">Property Type</label>
+        <select id="ptype" name="property_type">
+          <option>Residential</option>
+          <option>Commercial</option>
+          <option>HOA/Community</option>
+          <option>Other</option>
+        </select>
+
+        <label class="field" for="role">I am a...</label>
+        <select id="role" name="role">
+          <option>Property Owner</option>
+          <option>Property Investor</option>
+          <option>Tenant</option>
+          <option>Vendor/Contractor</option>
+          <option>Real Estate Agent</option>
+          <option>Other</option>
+        </select>
+
+        <label class="field" for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <div class="consent">
+          <input type="checkbox" id="smsConsent" name="sms_consent" value="yes">
+          <label for="smsConsent"><strong>SMS Consent:</strong> By checking this box, you agree to receive text messages from Colonial Property Management, LLC at the mobile number provided, including customer care messages responding to your inquiries, account and property notifications (such as rent reminders, maintenance updates, and urgent community notices), and occasional marketing and promotional messages. Consent is not a condition of purchase or of any service. Message frequency varies. Message and data rates may apply. Reply HELP for help or STOP to cancel at any time. See our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-service.html">Terms of Service</a>. Mobile opt-in information will not be shared with third parties for marketing purposes.</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="info-card">
+        <h3>Phone</h3>
+        <p><a href="tel:8453674240">(845) 367-4240</a></p>
+        <h3>Fax</h3>
+        <p>(888) 392-5662</p>
+        <h3>Email</h3>
+        <p><a href="mailto:office@colonialpropertymanagement.com">office@colonialpropertymanagement.com</a></p>
+        <h3>Main Office</h3>
+        <p>410A NY-59, Airmont, NY 10952</p>
+        <h3>Middletown Office</h3>
+        <p>40 Grove St, Unit 106, Middletown, NY 10940</p>
+        <h3>Poughkeepsie Office</h3>
+        <p>47 Civic Center Plaza, Suite A, Poughkeepsie, NY 12601</p>
+        <h3>Texting Program</h3>
+        <p>Once you opt in, you'll receive a confirmation message. You can opt out at any time by replying STOP, or reply HELP for assistance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Colonial Property Management, LLC</h4>
+        <p>The trusted expert for property owners and investors serving Rockland, Orange, Dutchess, Westchester, Albany, and Schenectady Counties in New York, as well as Connecticut.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:8453674240">(845) 367-4240</a>
+        <a href="mailto:office@colonialpropertymanagement.com">office@colonialpropertymanagement.com</a>
+        <span>410A NY-59, Airmont, NY 10952</span>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+    <div class="legalline">&copy; 2026 Colonial Property Management, LLC. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+// If a phone number is entered, SMS consent must be an explicit choice:
+// the checkbox stays unchecked by default and becomes required only when a phone number is provided.
+(function () {
+  var form = document.getElementById('contactForm');
+  var phone = document.getElementById('phone');
+  var consent = document.getElementById('smsConsent');
+  form.addEventListener('submit', function (e) {
+    if (phone.value.trim() !== '' && !consent.checked) {
+      e.preventDefault();
+      alert('To receive text messages, please check the SMS consent box. If you prefer not to receive texts, simply leave the phone number field blank.');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
